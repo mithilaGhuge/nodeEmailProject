@@ -1,0 +1,26 @@
+{
+  "name": "nodeemailproject",
+  "version": "1.0.0",
+  "description": "project to send mail to multiple people using node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mithilaGhuge/nodeEmailProject.git"
+  },
+  "author": "Mithila Ghuge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mithilaGhuge/nodeEmailProject/issues"
+  },
+  "homepage": "https://github.com/mithilaGhuge/nodeEmailProject#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.7.2",
+    "xlsx": "^0.17.4"
+  }
+}
