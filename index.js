@@ -18,7 +18,7 @@ let worksheet = emailListWorkbook.Sheets[emailListWorkbook.SheetNames[0]];
 such as service, sender email address and sender password*/
 
 let transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: process.env.SERVICE,
   auth: {
       //to protect user name and password env variables are used
     user: process.env.USER_MAIL,
@@ -38,7 +38,7 @@ for(let cell in worksheet){
         text: 'Email sent Successfully using nodemailer module of Node js!'
     };
     mailOptions.to = value;
-    
+
 //promise to send email and log the error and success msg
     transporter
     .sendMail(mailOptions)
